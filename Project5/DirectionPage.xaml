@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project5.DirectionPage">
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+            <Image
+            Source="logo.png"
+            HeightRequest="200"
+            Aspect="AspectFit"
+            SemanticProperties.Description="logo" />
+
+            <Label
+            Text="Direction"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1" />
+
+            <Image
+                Source="map.png"
+                HeightRequest="200"
+                Aspect="AspectFit"
+                SemanticProperties.Description="map"
+                />
+
+            <Label
+            Text="123 Anywhere St., Any City, ID 12345"
+            Style="{StaticResource SubHeadline}"
+            SemanticProperties.HeadingLevel="Level2" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
